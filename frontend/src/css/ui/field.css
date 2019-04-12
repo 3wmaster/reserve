@@ -1,0 +1,53 @@
+.field {
+	display:inline-flex;
+	box-sizing:border-box;
+	width:100%;
+}
+
+.field_input {
+	padding-right: 50px;
+}
+
+.field_btn {
+	position: absolute;
+	right:0;
+	top:0;
+	width: 40px;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: none;
+	background-color: transparent;
+	outline: none;
+	pointer-events: none;
+}
+
+.field_icon {
+	stroke: #000;
+}
+
+/* field icon */
+.field-icon {
+	position: relative;
+}
+
+.field-icon .field_input {
+	width:100%;
+}
+
+.field-icon-phone .field_input {
+	padding-right: 10px;
+	padding-left: 46px;
+}
+
+.field-icon-phone .field_btn {
+	right:auto;
+	left:0;
+	top:7px;
+	height:21px;
+	width: 36px;
+	padding: 1px 10px 0 8px;
+	border-right:1px solid var(--default-border-color);
+}
+

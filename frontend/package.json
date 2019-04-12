@@ -1,0 +1,26 @@
+{
+  "name": "t-publishing",
+  "version": "1.0.0",
+  "host": "http://www.t-publishing.ru/",
+  "description": "t-publishing",
+  "main": "gulpfile.js",
+  "author": "Orlov",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "autoprefixer": "^9.3.1",
+    "cssnano": "^4.1.7",
+    "gulp": "^3.9.1",
+    "gulp-color": "0.0.2",
+    "gulp-cssimport": "^7.0.0",
+    "gulp-download": "0.0.1",
+    "gulp-http-put": "^0.2.1",
+    "gulp-php2html": "^0.3.3",
+    "gulp-postcss": "^8.0.0",
+    "pixel-glass": "^1.0.13",
+    "postcss-css-variables": "^0.11.0",
+    "scripts": "^0.1.0"
+  },
+  "scripts": {
+    "gulp": "gulp"
+  }
+}

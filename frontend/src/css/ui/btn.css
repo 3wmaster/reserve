@@ -1,0 +1,23 @@
+.btn {
+	-webkit-appearance: none;
+	display: inline-flex;
+	align-items:center;
+	justify-content: center;
+	box-sizing: border-box;
+	height: 38px;
+	padding:0 25px;
+	outline: none;
+	border:none;
+	background-color: var(--success-color);
+	color:var(--reverse-color);
+	font-size: 17px;
+	font-family: Arial, sans-serif;
+	cursor: pointer;
+}
+
+@media all and (min-width:600px) {
+	.btn{
+		height:60px;
+	}
+}
+

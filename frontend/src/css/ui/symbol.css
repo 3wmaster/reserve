@@ -1,0 +1,42 @@
+/* Symbol */
+
+.symbol {
+	display: inline-block;
+	height: 1em;
+	fill: var(--default-color);
+}
+
+.symbol-calendar {
+	font-size: 15.5px;
+	width: 1.03em;
+	fill: transparent;
+	stroke: var(--default-color);
+}
+
+.symbol-x {
+	 font-size: 28px;
+	 width: 1em;
+	 fill: var(--secondary-color);
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

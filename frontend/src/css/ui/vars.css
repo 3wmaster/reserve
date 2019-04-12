@@ -1,0 +1,13 @@
+:root{
+	--default-color:#000;
+	--default-bg-color:#fff;
+	--default-border-color:#E0E0E0;
+
+	--secondary-color:#999;
+
+	--success-color:#009356;
+
+	--warning-color:#E16330;
+
+	--reverse-color:#fff;
+}

@@ -1,0 +1,21 @@
+/* markup */
+@import 'markup/layer.css';
+@import 'markup/page.css';
+
+/* ui */
+@import 'ui/jqueryui.css';
+@import 'ui/vars.css';
+@import 'ui/symbol.css';
+@import 'ui/default.css';
+@import 'ui/btn.css';
+@import 'ui/field.css';
+@import 'ui/text.css';
+@import 'ui/time.css';
+
+/* modules */
+@import 'modules/persons.css';
+
+/* blocks */
+@import 'blocks/widget.css';
+
+/* modifier */

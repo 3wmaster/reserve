@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+    <defs>
+        <linearGradient id="a" x1="0%" x2="92.626%" y1="0%" y2="0%">
+            <stop offset="0%" stop-color="#0064B2"/>
+            <stop offset="100%" stop-color="#10ADF6"/>
+        </linearGradient>
+        <linearGradient id="b" x1="0%" x2="92.626%" y1="0%" y2="0%">
+            <stop offset="0%" stop-color="#0064B2"/>
+            <stop offset="100%" stop-color="#10ADF6"/>
+        </linearGradient>
+        <linearGradient id="c" x1="0%" x2="92.626%" y1="0%" y2="0%">
+            <stop offset="0%" stop-color="#0064B2"/>
+            <stop offset="100%" stop-color="#10ADF6"/>
+        </linearGradient>
+        <linearGradient id="d" x1="0%" x2="92.626%" y1="0%" y2="0%">
+            <stop offset="0%" stop-color="#0064B2"/>
+            <stop offset="100%" stop-color="#10ADF6"/>
+        </linearGradient>
+        <linearGradient id="e" x1="0%" x2="92.626%" y1="0%" y2="0%">
+            <stop offset="0%" stop-color="#0064B2"/>
+            <stop offset="100%" stop-color="#10ADF6"/>
+        </linearGradient>
+        <linearGradient id="f" x1="0%" x2="92.626%" y1="0%" y2="0%">
+            <stop offset="0%" stop-color="#0064B2"/>
+            <stop offset="100%" stop-color="#10ADF6"/>
+        </linearGradient>
+        <linearGradient id="g" x1="0%" x2="92.626%" y1="0%" y2="0%">
+            <stop offset="0%" stop-color="#0064B2"/>
+            <stop offset="100%" stop-color="#10ADF6"/>
+        </linearGradient>
+        <linearGradient id="h" x1="0%" x2="92.626%" y1="0%" y2="0%">
+            <stop offset="0%" stop-color="#0064B2"/>
+            <stop offset="100%" stop-color="#10ADF6"/>
+        </linearGradient>
+        <linearGradient id="i" x1="0%" x2="92.626%" y1="0%" y2="0%">
+            <stop offset="0%" stop-color="#0064B2"/>
+            <stop offset="100%" stop-color="#10ADF6"/>
+        </linearGradient>
+    </defs>
+    <g fill="none" fill-rule="evenodd" stroke-width="2">
+        <path stroke="url(#a)" d="M22 14a8 8 0 0 0-8 8v11M40 14a8 8 0 0 1 8 8v11" transform="translate(1 1)"/>
+        <path stroke="url(#b)" d="M48 44h14v18H52M10 62H0V44h14" transform="translate(1 1)"/>
+        <path stroke="url(#c)" stroke-linejoin="round" d="M48 41v21H14V41c0-1.656 1.344-3 3-3h28c1.656 0 3 1.344 3 3z" transform="translate(1 1)"/>
+        <path stroke="url(#d)" stroke-linejoin="round" d="M48 62l3-6v-6h-3M14 62l-3-6v-6h3" transform="translate(1 1)"/>
+        <path stroke="#E4032E" stroke-linejoin="round" d="M35 51a3.001 3.001 0 0 1-6 0 3.001 3.001 0 0 1 6 0z"/>
+        <path stroke="url(#e)" d="M9 44v-2c0-10 7-9 14-13M39 29c7 4 14 2 14 12v3" transform="translate(1 1)"/>
+        <path stroke="url(#f)" d="M35 33l-4-2-4 2-4-4 2-3 6 1 6-1 2 3z" transform="translate(1 1)"/>
+        <path stroke="url(#g)" d="M36 22v4M26 26v-4" transform="translate(1 1)"/>
+        <path stroke="url(#h)" d="M40 9c0-6.075-2.925-9-9-9s-9 2.925-9 9v4c1 7 4 9 4 9 2 1 5 1 5 1s3 0 5-1c0 0 3-2 4-9V9z" transform="translate(1 1)"/>
+        <path stroke="url(#i)" d="M22 9l4-2 5 2 5 2 4-2" transform="translate(1 1)"/>
+    </g>
+</svg>

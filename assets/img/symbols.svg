@@ -1,0 +1,15 @@
+<?xml version ="1.0" encoding ="utf-8" ?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" baseProfile="full">
+    <symbol id="pointer" viewBox="0 0 96 96">
+        <title>Указатель</title>
+        <g transform="translate(-677.71429,-870.07648)">
+            <path d="m 677.96683,913.80109 95.74746,-43.72461 -42.96699,95.49492 0,-51.51778 z"/>
+        </g>
+    </symbol>
+    <symbol id="pointer" viewBox="0 0 96 96">
+        <title>Указатель</title>
+        <g transform="translate(-677.71429,-870.07648)">
+            <path d="m 677.96683,913.80109 95.74746,-43.72461 -42.96699,95.49492 0,-51.51778 z"/>
+        </g>
+    </symbol>
+</svg>

@@ -1,0 +1,69 @@
+.page {
+  -webkit-text-size-adjust: none;
+  text-underline-position: under;
+  font-size:15px;
+}
+
+.page_body{
+  position: absolute;
+  margin:0;
+  padding:0;
+  /* opacity: 0 !important; */
+}
+
+.page_frame{
+  position:relative;
+  left:0;
+  top:0;
+  box-sizing: border-box;
+  /* width:100%; */
+  /* min-height: 100%; */
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  overflow: hidden;
+}
+
+.page_column{
+  padding:0 20px;
+}
+
+.page_header.header {
+  flex:0 0 auto;
+}
+
+.page_section{
+  flex:1 0 auto;
+}
+
+.page_footer{
+  flex:0 0 auto;
+}
+
+.page_header{
+  width:100%;
+}
+
+.page_section{
+  width:100%;
+}
+
+.page_footer{
+  width:100%;
+}
+
+@media all and (min-width: 960px) {
+  .page{
+    font-size:0.078125vw; /* 1 px в vw при 1280(ширина макета) - это 100 / 1280 */
+  }
+
+  .page_body{
+
+  }
+}
+
+@media all and (min-width: 1280px) {
+  .page{
+    font-size:1px;
+  }
+}

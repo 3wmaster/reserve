@@ -1,0 +1,61 @@
+html{
+    overflow:hidden;
+}
+
+a{
+    outline:none;
+}
+
+[type="text"],
+[type="password"],
+[type="email"],
+[type="tel"],
+[type="search"] {
+    display:inline-flex;
+    box-sizing:border-box;
+    width:210px;
+    height: 35px;
+    padding: 0px 10px;
+    font: normal 13px/1.32 Arial;
+    background: transparent;
+    color: var(--default-color);
+    border: 1px solid var(--default-border-color);
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+input::placeholder {
+     color: var(--default-border-color);
+ }
+
+
+[type="radio"],
+[type="checkbox"] {
+    margin:0;
+    padding:0;
+    -webkit-appearance: none;
+}
+
+/* Pixel Glass */
+HTML {
+    background-repeat: no-repeat;
+    background-position: 50% 0px;
+    /* По умолчанию показывается мобильный макет */
+    background-image: url( "/frontend/src/img/templates/main-320.png" );
+    background-size:100% auto;
+}
+
+/* Десктоп */
+@media ( min-width: 600px ) {
+    HTML {
+        /* Десктопный макет */
+        background-image: url( "/frontend/src/img/templates/main-600.png" );
+    }
+}
+
+
+
+
+
+
+

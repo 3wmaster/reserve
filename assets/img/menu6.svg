@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64" height="56" viewBox="0 0 64 56">
+    <defs>
+        <linearGradient id="a" x1="0%" x2="92.626%" y1="0%" y2="0%">
+            <stop offset="0%" stop-color="#2F7CFE"/>
+            <stop offset="100%" stop-color="#10ADF6"/>
+        </linearGradient>
+        <linearGradient id="b" x1="0%" x2="92.626%" y1="0%" y2="0%">
+            <stop offset="0%" stop-color="#2F7CFE"/>
+            <stop offset="100%" stop-color="#10ADF6"/>
+        </linearGradient>
+        <linearGradient id="c" x1="0%" x2="92.626%" y1="0%" y2="0%">
+            <stop offset="0%" stop-color="#2F7CFE"/>
+            <stop offset="100%" stop-color="#10ADF6"/>
+        </linearGradient>
+        <path id="d" d="M0 56h64V0H0z"/>
+        <linearGradient id="f" x1="0%" x2="92.626%" y1="0%" y2="0%">
+            <stop offset="0%" stop-color="#2F7CFE"/>
+            <stop offset="100%" stop-color="#10ADF6"/>
+        </linearGradient>
+        <linearGradient id="g" x1="0%" x2="92.626%" y1="0%" y2="0%">
+            <stop offset="0%" stop-color="#2F7CFE"/>
+            <stop offset="100%" stop-color="#10ADF6"/>
+        </linearGradient>
+        <linearGradient id="h" x1="0%" x2="92.626%" y1="0%" y2="0%">
+            <stop offset="0%" stop-color="#2F7CFE"/>
+            <stop offset="100%" stop-color="#10ADF6"/>
+        </linearGradient>
+        <linearGradient id="i" x1="0%" x2="92.626%" y1="0%" y2="0%">
+            <stop offset="0%" stop-color="#2F7CFE"/>
+            <stop offset="100%" stop-color="#10ADF6"/>
+        </linearGradient>
+        <linearGradient id="j" x1="0%" x2="92.626%" y1="0%" y2="0%">
+            <stop offset="0%" stop-color="#2F7CFE"/>
+            <stop offset="100%" stop-color="#10ADF6"/>
+        </linearGradient>
+        <linearGradient id="k" x1="0%" x2="92.626%" y1="0%" y2="0%">
+            <stop offset="0%" stop-color="#2F7CFE"/>
+            <stop offset="100%" stop-color="#10ADF6"/>
+        </linearGradient>
+        <linearGradient id="l" x1="0%" x2="92.626%" y1="0%" y2="0%">
+            <stop offset="0%" stop-color="#2F7CFE"/>
+            <stop offset="100%" stop-color="#10ADF6"/>
+        </linearGradient>
+        <linearGradient id="m" x1="0%" x2="92.626%" y1="0%" y2="0%">
+            <stop offset="0%" stop-color="#2F7CFE"/>
+            <stop offset="100%" stop-color="#10ADF6"/>
+        </linearGradient>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <path fill="url(#a)" fill-rule="nonzero" d="M12 32v2H8a8 8 0 0 1-8-8h2a6 6 0 0 0 6 6h4z"/>
+        <path fill="url(#b)" fill-rule="nonzero" d="M44 32v2H20v-2z"/>
+        <path fill="url(#a)" fill-rule="nonzero" d="M62 26h2a8 8 0 0 1-8 8h-4v-2h4a6 6 0 0 0 6-6z"/>
+        <path fill="url(#c)" fill-rule="nonzero" d="M45 52v2H19v-2zM19 10V8h26v2z"/>
+        <mask id="e" fill="#fff">
+            <use xlink:href="#d"/>
+        </mask>
+        <path fill="#D0021B" fill-rule="nonzero" d="M11 38V28h10v10H11zm2-2h6v-6h-6v6zM43 38V28h10v10H43zm2-2h6v-6h-6v6z" mask="url(#e)"/>
+        <path fill="url(#f)" fill-rule="nonzero" d="M27 30v-2h10v2z" mask="url(#e)"/>
+        <path fill="url(#g)" fill-rule="nonzero" d="M49 37h-2v-5h2zM17 37h-2v-5h2z" mask="url(#e)"/>
+        <path fill="url(#h)" fill-rule="nonzero" d="M47 22v-2h2v2zM47 26v-2h2v2zM47 42v-2h2v2zM47 46v-2h2v2zM15 22v-2h2v2zM15 26v-2h2v2zM15 42v-2h2v2zM15 46v-2h2v2z" mask="url(#e)"/>
+        <path fill="url(#i)" fill-rule="nonzero" d="M23 6V4h18v2z" mask="url(#e)"/>
+        <path fill="url(#h)" fill-rule="nonzero" d="M33 26h-2v-2h2z" mask="url(#e)"/>
+        <path fill="url(#j)" fill-rule="nonzero" d="M50 54V37h2v19h-8V37h2v17zM18 54V37h2v19h-8V37h2v17z" mask="url(#e)"/>
+        <path fill="url(#k)" fill-rule="nonzero" d="M14 8v21h-2V6h8v23h-2V8zM46 8v21h-2V6h8v23h-2V8z" mask="url(#e)"/>
+        <path fill="url(#l)" fill-rule="nonzero" d="M24 9h-2V3a3 3 0 0 1 3-3h14a3 3 0 0 1 3 3v6h-2V3a1 1 0 0 0-1-1H25a1 1 0 0 0-1 1v6z" mask="url(#e)"/>
+        <path fill="url(#m)" fill-rule="nonzero" d="M62 10H51V8h12a1 1 0 0 1 1 1v44a1 1 0 0 1-1 1H51v-2h11V10zM2 52h11v2H1a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1h12v2H2v42z" mask="url(#e)"/>
+    </g>
+</svg>

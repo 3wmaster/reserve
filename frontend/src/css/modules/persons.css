@@ -1,0 +1,29 @@
+.persons{
+	display:flex;
+	box-sizing:border-box;
+	width:auto;
+	height:35px;
+	align-items:center;
+	border: 1px solid #efeeee;
+	white-space:nowrap;
+}
+
+.persons_num {
+	border:none;
+	padding: 0;
+	width: 20px;
+	text-align: center;
+}
+
+.persons_btn {
+	width:34px;
+	height:100%;
+	border:none;
+	background:none;
+	outline:none;
+}
+
+.persons_data {
+	display:block;
+	font-size:13px;
+}
