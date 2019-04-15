@@ -14,6 +14,7 @@
 
 /* modules */
 @import 'modules/persons.css';
+@import 'modules/confirm.css';
 
 /* blocks */
 @import 'blocks/widget.css';

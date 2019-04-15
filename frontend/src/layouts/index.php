@@ -21,6 +21,20 @@
     $controller =  explode ('?', $controller);
     $controller = $controller[0];
 
+    /* Ajax */
+	if (isset($headers['X-Request-Ajax'])) {
+        if(getenv("REQUEST_METHOD")=='POST'){
+        	if($controller == 'times'){
+                $data = array(
+                	'times' => array(500,600,700)
+				);
+                sleep(2);
+                echo json_encode($data);
+			}
+		}
+        exit();
+    }
+
     $page = Array();
     $page['title'] = 'Заголовок страницы';
     $page['keywords'] = 'Ключевые слова';

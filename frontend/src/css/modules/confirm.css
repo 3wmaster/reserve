@@ -1,0 +1,39 @@
+.confirm{
+	position:absolute;
+	left:0;
+	top:100%;
+	box-sizing: border-box;
+	width:100%;
+	padding: 15px;
+	background-color:var(--default-bg-color);
+	color: var(--default-color);
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.confirm_title{display: block;margin-bottom: 8px;}
+
+.confirm_btns{display: flex;margin-left: -15px;}
+.confirm_btn{flex: 1 0 0;margin-left: 15px;}
+
+@media all and (min-width:480px){
+	.confirm {
+		align-items: center;
+		padding:40px 30px 40px 60px;
+	}
+
+	.confirm_title{
+		margin-bottom: 0;
+		/* text-align:center; */
+	}
+
+	.confirm_btns{
+		margin-left:0;
+		flex-grow:2;
+	}
+
+	.confirm_btn{
+		margin-left:20px;
+	}
+}
+
+

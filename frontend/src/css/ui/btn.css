@@ -8,16 +8,34 @@
 	padding:0 25px;
 	outline: none;
 	border:none;
-	background-color: var(--success-color);
-	color:var(--reverse-color);
 	font-size: 17px;
 	font-family: Arial, sans-serif;
 	cursor: pointer;
 }
 
-@media all and (min-width:600px) {
+.btn-small{
+	height: 40px;
+	font-size:16px;
+	padding: 0 15px;
+}
+
+.btn-success{
+	background-color: var(--success-color);
+	color:var(--reverse-color);
+}
+
+.btn-secondary{
+	background-color: var(--secondary-color);
+	color:var(--reverse-color);
+}
+
+@media all and (min-width:480px) {
 	.btn{
 		height:60px;
+	}
+
+	.btn-small{
+		height: 40px;
 	}
 }
 

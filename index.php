@@ -27,7 +27,6 @@
             height:0; /* will be change */
             transition: height .3s;
             border:none;
-            background-color:#f00;
         }
     </style>
 
@@ -35,7 +34,7 @@
 
 <body>
 <div class="wrapper">
-    <iframe id="widget" class="widget" src="/frontend/src/layouts/main/?api=1&dev=1"></iframe>
+    <iframe id="widget" class="widget" src="/frontend/src/layouts/main/?api=1&restaurant_id=123&dev=1"></iframe>
 </div>
 <script>
     (function(root, doc){
@@ -50,13 +49,17 @@
                 changeHeight: function(data){
                     console.log('меняем высоту', data.height);
                     iframe.style.height = data.height + 'px';
+                },
+                close: function(){
+                    alert('родительское окно получило событие "close" от виджета');
                 }
             },
             onMessage = function(msg){
                 // TODO проверка на домен
                 var msg = event.data;
+                //if(msg.name !== 'reserveWidget') return;
                 try{
-                    callbacks[msg.act](msg.param)
+                    callbacks[msg.act](msg.data)
                 } catch(e){}
             };
 
@@ -67,9 +70,6 @@
             win.postMessage({'act': 'ready'}, targetOrigin);
             root.addEventListener('message', onMessage);
         }, 5000)*/
-
-
-
     })(window, document);
 </script>
 </body>

@@ -3,8 +3,9 @@ import {ready} from './modules/ready.js';
 import {telMask} from './modules/telMask.js';
 import {persons} from './modules/persons.js';
 import {scriptonload} from './modules/scriptonload.js';
-import {height} from './modules/height.js';
-import {widget} from './modules/widget.js';
+import {resizing} from './modules/resizing.js';
+import {times} from './modules/times.js';
+import {confirm} from './modules/confirm.js';
 
 
 APP.helpers = helpers();
@@ -12,9 +13,9 @@ APP.helpers = helpers();
 APP.modules = {
     actions: {
         telMask: function(el){return telMask(el)},
+        resizing: function(el){return resizing(el)},
         persons: function(el){return persons(el)},
-        height: function(el){return height(el)},
-        widget: function(el){return widget(el)},
+        times: function(el){return times(el)},
         uidatepicker: function(el){
             var init = function(){
                     $.datepicker.regional['ru'] = {
@@ -46,7 +47,8 @@ APP.modules = {
 
             if(!window.jQuery) scriptonload(APP.vendors.jquery, checkUI);
             else checkUI();
-        }
+        },
+        confirm: function(el){return confirm(el)}
     },
     run:function(wrapper, attr, data){
         var wrapper = wrapper || document,
@@ -86,8 +88,16 @@ APP.modules = {
 };
 
 //
+
 ready(function(){
-    APP.modules.run();
+    var allModules = APP.modules.run();
+    var resizingObj = allModules.resizing[0];
+    var timesObj = allModules.times[0];
+
+    //
+    timesObj.after = resizingObj.checkHeight;
+    timesObj.update();
+    resizingObj.run();
 });
 
 
