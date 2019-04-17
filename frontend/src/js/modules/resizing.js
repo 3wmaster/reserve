@@ -9,6 +9,7 @@ var resizing = function (el) {
             return rect.height;
         },
         checkHeight = function(){
+            console.log('checkHeight');
             var h = getHeight();
             if(widgetHeight !== h){
                 messaging.send('changeHeight', {'height': h});

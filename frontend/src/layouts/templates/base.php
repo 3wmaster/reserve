@@ -30,10 +30,8 @@
             'api': '<?= $_GET['api']; ?>' /* TODO */
         };
         APP.ajax = {
-          'times': '/frontend/src/layouts/times/'
-        };
-        APP.obj = {
-            resizing: undefined
+          'times': '/frontend/src/layouts/reserve/times/',
+          'form': '/frontend/src/layouts/reserve/form/'
         };
         APP.vendors = {
             'imask': '/static/js/vendors/imask.js',

@@ -57,7 +57,7 @@
             onMessage = function(msg){
                 // TODO проверка на домен
                 var msg = event.data;
-                //if(msg.name !== 'reserveWidget') return;
+                if(msg.name !== 'reserveWidget') return;
                 try{
                     callbacks[msg.act](msg.data)
                 } catch(e){}

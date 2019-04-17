@@ -4,17 +4,18 @@ var confirm = function (el) {
     var confirmBtn = document.querySelector('[data-confirm-btn]'),
         closeBtn = el.querySelector('[data-confirm-close]'),
         continueBtn = el.querySelector('[data-confirm-continue]'),
+        widgetTag = APP.tags.widget,
         confirmWidget = function(){
-            el.classList.add('widget-confirm');
+            widgetTag.classList.add('widget-confirm');
         },
         closeWidget = function(){
-            el.classList.remove('widget-confirm');
-            el.classList.add('widget-close');
+            widgetTag.classList.remove('widget-confirm');
+            widgetTag.classList.add('widget-close');
             messaging.send('close');
 
         },
         continueWidget = function(){
-            el.classList.remove('widget-confirm');
+            widgetTag.classList.remove('widget-confirm');
         };
 
     //

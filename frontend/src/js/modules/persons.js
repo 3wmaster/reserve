@@ -12,12 +12,17 @@ var persons = function(el){
 			newResult = Math.max(min, Math.min(max, result + delta));
 			resultObj.value = newResult;
             result = newResult;
+            returned.afterChange();
+		},
+		returned = {
+			afterChange:function(){}
 		};
 
 	//
 	btns.forEach(function(btn){
 		btn.onclick = change;
 	});
+	return returned;
 };
 export {persons};
 

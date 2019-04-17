@@ -24,13 +24,20 @@
     /* Ajax */
 	if (isset($headers['X-Request-Ajax'])) {
         if(getenv("REQUEST_METHOD")=='POST'){
-        	if($controller == 'times'){
-                $data = array(
-                	'times' => array(500,600,700)
-				);
-                sleep(2);
-                echo json_encode($data);
-			}
+            if($controller == 'reserve') {
+                if ($uri[5] == 'times') {
+                    $data = array(
+                        'times' => array(500, 600, 700)
+                    );
+                    echo json_encode($data);
+                } else if ($uri[5] == 'form'){
+                    $message = array(
+                        'status' => true,
+                        'message' => 'Спасибо %username%, в ближайшее время с вами свяжется представитель ресторана и подтвердит детали'
+                    );
+                    echo json_encode($message);
+				}
+            }
 		}
         exit();
     }

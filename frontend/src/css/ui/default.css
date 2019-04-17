@@ -37,22 +37,20 @@ input::placeholder {
 }
 
 /* Pixel Glass */
+/*
 HTML {
     background-repeat: no-repeat;
     background-position: 50% 0px;
-    /* По умолчанию показывается мобильный макет */
     background-image: url( "/frontend/src/img/templates/main-320.png" );
     background-size:100% auto;
 }
 
-/* Десктоп */
 @media ( min-width: 600px ) {
     HTML {
-        /* Десктопный макет */
         background-image: url( "/frontend/src/img/templates/main-600.png" );
     }
 }
-
+*/
 
 
 

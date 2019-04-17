@@ -11,20 +11,20 @@ var times = function (wrapper) {
                 return obj;
             }();
             wrapper.innerHTML = APP.helpers.templateEngine(template, convert);
-            returned.after();
+            returned.afterChange();
             xhr = false;
         },
-        update = function(){
+        update = function(data){
             if(xhr) xhr.abort();
             xhr = new XMLHttpRequest();
             xhr.open("POST", APP.ajax.times, true);
             xhr.setRequestHeader("X-Request-Ajax","1");
             xhr.onload = onLoad;
-            xhr.send('');
+            xhr.send(data);
         },
         returned = {
             update:update,
-            after:function(){}
+            afterChange:function(){}
         };
 
     //

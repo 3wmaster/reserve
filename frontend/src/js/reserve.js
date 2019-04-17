@@ -6,15 +6,18 @@ import {scriptonload} from './modules/scriptonload.js';
 import {resizing} from './modules/resizing.js';
 import {times} from './modules/times.js';
 import {confirm} from './modules/confirm.js';
+import {form} from './modules/form.js';
 
 
 APP.helpers = helpers();
+APP.tags = {};
 
 APP.modules = {
     actions: {
         telMask: function(el){return telMask(el)},
         resizing: function(el){return resizing(el)},
         persons: function(el){return persons(el)},
+        form: function(el){return form(el)},
         times: function(el){return times(el)},
         uidatepicker: function(el){
             var init = function(){
@@ -90,14 +93,16 @@ APP.modules = {
 //
 
 ready(function(){
+    APP.tags.widget = document.getElementById('widget');
     var allModules = APP.modules.run();
     var resizingObj = allModules.resizing[0];
-    var timesObj = allModules.times[0];
+    var formObj = allModules.form[0];
 
-    //
-    timesObj.after = resizingObj.checkHeight;
-    timesObj.update();
-    resizingObj.run();
+    // TODO
+    if(window !== top){
+        formObj.afterUpdate = function(){resizingObj.checkHeight()};
+        resizingObj.run();
+    }
 });
 
 
