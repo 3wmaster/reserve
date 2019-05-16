@@ -1,3 +1,4 @@
+import {messaging} from "./messaging.js";
 
 var form = function (formTag) {
     var xhr,
@@ -21,9 +22,11 @@ var form = function (formTag) {
             if(data.status){
                 alert(data.message);
                 formTag.reset();
+                messaging.send('success');
             } else{
                 alert(data.message);
             }
+            xhr = false;
         },
         returned = {
             afterUpdate: function(){console.log(333)}

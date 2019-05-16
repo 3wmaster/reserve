@@ -14,7 +14,7 @@
         <input type="hidden" name="restaurant_id" value="23232" />
         <div class="widget_set widget_set-header">
             <div class="widget_date field field-icon">
-                <input class="field_input" data-modules="uidatepicker" name="date" type="text" value="<?php echo date('Y-m-d');?>"  name="date" />
+                <input class="field_input" data-modules="uidatepicker" name="date" type="text" value="<?php echo date('d-m-Y');?>"  name="date" />
                 <button class="field_btn">
                     <svg class="field_icon symbol symbol-calendar" role="img"><use xlink:href="#calendar"></use></svg>
                 </button>

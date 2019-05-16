@@ -52,6 +52,9 @@
                 },
                 close: function(){
                     alert('родительское окно получило событие "close" от виджета');
+                },
+                success: function(){
+                    alert('родительское окно получило событие "success" от виджета');
                 }
             },
             onMessage = function(msg){
