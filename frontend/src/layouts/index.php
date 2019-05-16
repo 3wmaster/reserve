@@ -35,6 +35,19 @@
                         'status' => true,
                         'message' => 'Спасибо %username%, в ближайшее время с вами свяжется представитель ресторана и подтвердит детали'
                     );
+                    $message = array(
+                        'status' => true,
+                        'bookID' => '123',
+                        'smsConfirm' => true,
+                        'info' => 'Иван, 19 мая, 12:30',
+                        'message' => 'Спасибо %username%, на ваш номер телефона отправлен проверочнй код, введите его в форму ниже.'
+                    );
+                    echo json_encode($message);
+				} else if ($uri[5] == 'smsForm'){
+                    $message = array(
+                        'status' => true,
+                        'message' => 'Спасибо %username%, в ближайшее время с вами свяжется представитель ресторана и подтвердит детали'
+                    );
                     echo json_encode($message);
 				}
             }

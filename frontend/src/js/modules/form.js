@@ -20,16 +20,24 @@ var form = function (formTag) {
         onLoad = function(){
             var data = JSON.parse(xhr.responseText);
             if(data.status){
-                alert(data.message);
-                formTag.reset();
-                messaging.send('success');
+                /* смотрим, нужно или нет показвать форму с подтверждением смс */
+                if(data.smsConfirm){
+                    returned.showSmsForm(data);
+                    alert(data.message);
+                }
+                else {
+                    alert(data.message);
+                    formTag.reset();
+                    messaging.send('success');
+                }
             } else{
                 alert(data.message);
             }
             xhr = false;
         },
         returned = {
-            afterUpdate: function(){console.log(333)}
+            showSmsForm: function(){},
+            afterUpdate: function(){}
         };
     //
     formModules.times[0].afterChange = function(){returned.afterUpdate()};

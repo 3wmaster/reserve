@@ -103,6 +103,14 @@
         </div>
         <input class="widget_submit btn btn-success" type="submit" value="Забронировать" />
     </form>
+    <form class="widget_smsForm" data-modules="smsForm" autocomplete="off" action="/">
+        <div data-smsForm-infoTag class="widget_orderInfo"></div>
+        <span class="widget_title">Потвердите номер телефона</span>
+        <input data-smsForm-bookingField type="hidden" name="booking_id" value="" />
+        <input class="widget_field widget_field-code field" name="code" type="password" value="" placeholder="Код из СМС" required />
+        <input class="widget_submit btn btn-success" type="submit" value="Подтвердить" />
+        <button data-smsForm-cancelBtn class="widget_cancelBtn btn btn-secondary">Отмена</button>
+    </form>
     <button class="widget_close" data-confirm-btn>
         <svg class="widget_closeIcon symbol symbol-x" role="img" ><use xlink:href="#x" /></svg>
     </button>

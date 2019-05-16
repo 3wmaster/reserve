@@ -7,6 +7,7 @@ import {resizing} from './modules/resizing.js';
 import {times} from './modules/times.js';
 import {confirm} from './modules/confirm.js';
 import {form} from './modules/form.js';
+import {smsForm} from './modules/smsForm.js';
 
 
 APP.helpers = helpers();
@@ -18,6 +19,7 @@ APP.modules = {
         resizing: function(el){return resizing(el)},
         persons: function(el){return persons(el)},
         form: function(el){return form(el)},
+        smsForm: function(el){return smsForm(el)},
         times: function(el){return times(el)},
         uidatepicker: function(el){
             var init = function(){
@@ -92,15 +94,26 @@ APP.modules = {
 
 //
 
+/* TODO */
+/* После того, как смс форма будет на бое - убрать  проверки, на даннй момент она всегда должна быть в разметке */
+
+
 ready(function(){
     APP.tags.widget = document.getElementById('widget');
     var allModules = APP.modules.run();
     var resizingObj = allModules.resizing[0];
     var formObj = allModules.form[0];
+    var smsFormObj = allModules.smsForm ? allModules.smsForm[0] : undefined;
 
     // TODO
+
+    formObj.showSmsForm = function(data){
+        smsFormObj.run(data);
+    }
+
     if(window !== top){
         formObj.afterUpdate = resizingObj.checkHeight;
+        if(smsFormObj) smsFormObj.afterUpdate = resizingObj.checkHeight;
         resizingObj.run();
     }
 });

@@ -34,7 +34,11 @@
 }
 
 .widget_form {
+	display:block;
+}
 
+.widget_smsForm {
+	display:none;
 }
 
 .widget_set {
@@ -51,8 +55,7 @@
 }
 
 .widget_set-content {
-
-margin-bottom: 11px;
+	margin-bottom: 11px;
 }
 
 .widget_set-footer {
@@ -105,7 +108,13 @@ margin-bottom: 11px;
 	color:#999;
 }
 
-.widget_submit {
+.widget_field-code{
+	margin-bottom:13px;
+}
+
+
+.widget_submit,
+.widget_cancelBtn {
 	width:100%;
 	margin-bottom: 13px;
 }
@@ -134,38 +143,15 @@ margin-bottom: 11px;
     visibility:hidden;
 }
 
+.widget_orderInfo{
+	display:block;
+	margin-bottom:16px;
+	font-weight:bold;
+	font-size:15px;
+}
+
 .widget_confirm{
     display:none;
-}
-
-/* confirm */
-.widget-confirm:after{
-    content:'';
-    position:absolute;
-    left:0;
-    top:0;
-    display:block;
-    width:100%;
-    height:100%;
-    background-color:var(--default-bg-color);
-    opacity:.9;
-}
-
-.widget-confirm .widget_header{
-	background-color: var(--warning-color);
-	color: var(--reverse-color);
-}
-
-.widget-confirm .widget_name{
-    color: var(--reverse-color);
-}
-
-.widget-confirm .widget_closeIcon{
-    fill: var(--reverse-color);
-}
-
-.widget-confirm .widget_confirm{
-    display: block;
 }
 
 @media all and (min-width:480px){
@@ -212,20 +198,70 @@ margin-bottom: 11px;
 		width:100%;
 	}
 
+	.widget_field-code{
+		width: 100%;
+		margin-left: 0;
+		margin-bottom: 13px;
+		height: 60px;
+		font-size: 16px;
+	}
+
 	.widget_close {
 		right: 31px;
 		top: 39px;
 		outline:none;
 	}
-
-    /* confirm */
-    .widget-confirm .widget_confirm{
-        display: flex;
-        padding-bottom: 38px;
-        padding-top: 38px;
-    }
 }
 
+
+
+/* confirm */
+.widget-confirm:after{
+	content:'';
+	position:absolute;
+	left:0;
+	top:0;
+	display:block;
+	width:100%;
+	height:100%;
+	background-color:var(--default-bg-color);
+	opacity:.9;
+}
+
+.widget-confirm .widget_header{
+	background-color: var(--warning-color);
+	color: var(--reverse-color);
+}
+
+.widget-confirm .widget_name{
+	color: var(--reverse-color);
+}
+
+.widget-confirm .widget_closeIcon{
+	fill: var(--reverse-color);
+}
+
+.widget-confirm .widget_confirm{
+	display: block;
+}
+
+@media all and (min-width:480px){
+	.widget-confirm .widget_confirm{
+		display: flex;
+		padding-bottom: 38px;
+		padding-top: 38px;
+	}
+}
+
+
+/* smsForm */
+.widget-smsForm .widget_form {
+	display:none;
+}
+
+.widget-smsForm .widget_smsForm {
+	display:block;
+}
 
 
 
