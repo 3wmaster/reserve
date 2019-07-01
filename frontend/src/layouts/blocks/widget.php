@@ -107,6 +107,7 @@
         <div data-smsForm-infoTag class="widget_orderInfo"></div>
         <span class="widget_title">Потвердите номер телефона</span>
         <input data-smsForm-bookingField type="hidden" name="booking_id" value="" />
+        <input data-smsForm-phoneField type="hidden" name="phone" value="" />
         <input class="widget_field widget_field-code field" name="code" type="password" value="" placeholder="Код из СМС" required />
         <input class="widget_submit btn btn-success" type="submit" value="Подтвердить" />
         <button data-smsForm-cancelBtn class="widget_cancelBtn btn btn-secondary">Отмена</button>

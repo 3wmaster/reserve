@@ -3,6 +3,7 @@ import {messaging} from "./messaging.js";
 var smsForm = function (formTag) {
     var xhr,
         bookingField = formTag.querySelector('[data-smsForm-bookingField]'),
+        phoneField = formTag.querySelector('[data-smsForm-phoneField]'),
         infoTag = formTag.querySelector('[data-smsForm-infoTag]'),
         cancelBtn = formTag.querySelector('[data-smsForm-cancelBtn]'),
         widgetTag = APP.tags.widget,
@@ -37,6 +38,7 @@ var smsForm = function (formTag) {
         },
         run = function(data){
             bookingField.value = data.bookID;
+            phoneField.value = data.phone;
             infoTag.innerHTML = data.info;
             widgetTag.classList.add('widget-smsForm');
             returned.afterUpdate();
