@@ -18,7 +18,16 @@ var form = function (formTag) {
             xhr.send(formData);
         },
         onLoad = function(){
-            var data = JSON.parse(xhr.responseText);
+
+            /* если вдруг получаем не JSON строку - выводим алерт */
+            try{
+                var data = JSON.parse(xhr.responseText);
+            } catch(e){
+                alert('Идет обновление, попробуйте зайти через пару минут');
+                xhr = false;
+                return;
+            };
+
             if(data.status){
                 /* смотрим, нужно или нет показвать форму с подтверждением смс */
                 if(data.smsConfirm){
